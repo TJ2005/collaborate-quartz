@@ -1,11 +1,11 @@
 import { FilePath, FullSlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
+import { write } from "./helpers"
 
-export const Htaccess: QuartzEmitterPlugin = () => {
-  return {
-    name: "Htaccess",
-    emit: async (_ctx, _content, _resources) => {
-      const htaccessContent = `RewriteEngine On
+export const Htaccess: QuartzEmitterPlugin = () => ({
+  name: "Htaccess",
+  async emit(ctx) {
+    const htaccessContent = `RewriteEngine On
  
 ErrorDocument 404 /404.html
  
@@ -20,14 +20,14 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^(.*)/$ $1/index.html [L]
 `
 
-      return [
-        {
-          slug: ".htaccess" as FullSlug,
-          ext: "",
-          content: htaccessContent,
-        },
-      ]
-    },
-    getQuartzComponents: () => [],
-  }
-}
+    const path = await write({
+      ctx,
+      content: htaccessContent,
+      slug: ".htaccess" as FullSlug,
+      ext: "",
+    })
+    
+    return [path]
+  },
+  async *partialEmit() {},
+})
