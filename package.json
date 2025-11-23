@@ -1,15 +1,15 @@
 {
-  "name": "@jackyzha0/quartz",
+  "name": "collaborate-btechcys-27",
   "description": "🌱 publish your digital garden and notes as a website",
   "private": true,
   "version": "4.5.2",
   "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "author": "TJ2005",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://github.com/TJ2005/collaborate-quartz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/TJ2005/collaborate-quartz.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
@@ -29,7 +29,7 @@
     "digital-garden",
     "markdown",
     "blog",
-    "quartz"
+    "collaborate-btechcys-27"
   ],
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"

@@ -25,21 +25,21 @@ tags:
 The rest of your content lives here. You can use **Markdown** here :)
 ```
 
-Some common frontmatter fields that are natively supported by Quartz:
+Some common frontmatter fields that are natively supported by collaborate-btechcys-27:
 
-- `title`: Title of the page. If it isn't provided, Quartz will use the name of the file as the title.
+- `title`: Title of the page. If it isn't provided, collaborate-btechcys-27 will use the name of the file as the title.
 - `description`: Description of the page used for link previews.
 - `permalink`: A custom URL for the page that will remain constant even if the path to the file changes.
 - `aliases`: Other names for this note. This is a list of strings.
 - `tags`: Tags for this note.
-- `draft`: Whether to publish the page or not. This is one way to make [[private pages|pages private]] in Quartz.
+- `draft`: Whether to publish the page or not. This is one way to make [[private pages|pages private]] in collaborate-btechcys-27.
 - `date`: A string representing the day the note was published. Normally uses `YYYY-MM-DD` format.
 
 See [[Frontmatter]] for a complete list of frontmatter.
 
 ## Syncing your Content
 
-When your Quartz is at a point you're happy with, you can save your changes to GitHub.
+When your collaborate-btechcys-27 is at a point you're happy with, you can save your changes to GitHub.
 First, make sure you've [[setting up your GitHub repository|already setup your GitHub repository]] and then do `npx quartz sync`.
 
 ## Customization

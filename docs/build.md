@@ -1,14 +1,14 @@
 ---
-title: "Building your Quartz"
+title: "Building your collaborate-btechcys-27"
 ---
 
-Once you've [[index#🪴 Get Started|initialized]] Quartz, let's see what it looks like locally:
+Once you've [[index#🪴 Get Started|initialized]] collaborate-btechcys-27, let's see what it looks like locally:
 
 ```bash
 npx quartz build --serve
 ```
 
-This will start a local web server to run your Quartz on your computer. Open a web browser and visit `http://localhost:8080/` to view it.
+This will start a local web server to run your collaborate-btechcys-27 on your computer. Open a web browser and visit `http://localhost:8080/` to view it.
 
 > [!hint] Flags and options
 > For full help options, you can run `npx quartz build --help`.

@@ -1,46 +1,136 @@
 ---
-title: Welcome to Quartz 4
+title: MPSTME BTech Cybersecurity
 ---
 
-Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites. Thousands of students, developers, and teachers are [[showcase|already using Quartz]] to publish personal notes, websites, and [digital gardens](https://jzhao.xyz/posts/networked-thought) to the web.
+Welcome to the MPSTME (Mukesh Patel School of Technology Management & Engineering) BTech Cybersecurity collaborative digital garden. This platform is designed for students, faculty, and the cybersecurity community to share notes, resources, and knowledge.
 
-## 🪴 Get Started
+## 🚀 Deployment Guide
 
-Quartz requires **at least [Node](https://nodejs.org/) v22** and `npm` v10.9.2 to function correctly. Ensure you have this installed on your machine before continuing.
+### Prerequisites
 
-Then, in your terminal of choice, enter the following commands line by line:
+Before you begin, ensure you have the following installed:
+- **Node.js** v22 or higher
+- **npm** v10.9.2 or higher
+
+You can verify your installations by running:
+```shell
+node --version
+npm --version
+```
+
+### Getting Started
+
+#### 1. Clone and Install
 
 ```shell
-git clone https://github.com/jackyzha0/quartz.git
-cd quartz
-npm i
+git clone https://github.com/TJ2005/collaborate-quartz.git
+cd collaborate-quartz
+npm install
+```
+
+#### 2. Initialize Content (First Time Only)
+
+```shell
 npx quartz create
 ```
 
-This will guide you through initializing your Quartz with content. Once you've done so, see how to:
+This will guide you through setting up your content directory.
 
-1. [[authoring content|Writing content]] in Quartz
-2. [[configuration|Configure]] Quartz's behaviour
-3. Change Quartz's [[layout]]
-4. [[build|Build and preview]] Quartz
-5. Sync your changes with [[setting up your GitHub repository|GitHub]]
-6. [[hosting|Host]] Quartz online
+#### 3. Local Development
 
-If you prefer instructions in a video format you can try following Nicole van der Hoeven's
-[video guide on how to set up Quartz!](https://www.youtube.com/watch?v=6s6DT1yN4dw&t=227s)
+Start a local development server to preview your changes:
 
-## 🔧 Features
+```shell
+npx quartz build --serve
+```
 
-- [[Obsidian compatibility]], [[full-text search]], [[graph view]], [[wikilinks|wikilinks, transclusions]], [[backlinks]], [[features/Latex|Latex]], [[syntax highlighting]], [[popover previews]], [[Docker Support]], [[i18n|internationalization]], [[comments]] and [many more](./features/) right out of the box
-- Hot-reload on configuration edits and incremental rebuilds for content edits
-- Simple JSX layouts and [[creating components|page components]]
-- [[SPA Routing|Ridiculously fast page loads]] and tiny bundle sizes
-- Fully-customizable parsing, filtering, and page generation through [[making plugins|plugins]]
+Visit `http://localhost:8080/` in your browser to see your site.
 
-For a comprehensive list of features, visit the [features page](./features/). You can read more about the _why_ behind these features on the [[philosophy]] page and a technical overview on the [[architecture]] page.
+#### 4. Add Your Content
 
-### 🚧 Troubleshooting + Updating
+All content goes in the `content/` folder. You can:
+- Create new markdown files (`.md`)
+- Edit existing content
+- Add images and attachments
+- Use [[wikilinks]] to link between pages
 
-Having trouble with Quartz? Try searching for your issue using the search feature. If you haven't already, [[upgrading|upgrade]] to the newest version of Quartz to see if this fixes your issue.
+#### 5. Build for Production
 
-If you're still having trouble, feel free to [submit an issue](https://github.com/jackyzha0/quartz/issues) if you feel you found a bug or ask for help in our [Discord Community](https://discord.gg/cRFFHYye7t).
+When ready to deploy:
+
+```shell
+npx quartz build
+```
+
+This creates static files in the `public/` folder.
+
+#### 6. Deploy Your Changes
+
+Sync your changes to GitHub (which can trigger automatic deployment):
+
+```shell
+npx quartz sync
+```
+
+## 📝 Content Management
+
+### Writing Content
+
+- Place all content in the `content/` folder
+- Use Markdown syntax
+- Add frontmatter for metadata:
+
+```markdown
+---
+title: Your Page Title
+date: 2025-11-23
+tags:
+  - cybersecurity
+  - networking
+---
+
+Your content here...
+```
+
+### Configuration
+
+- **Site Config**: Edit `quartz.config.ts` for general settings
+- **Layout**: Modify `quartz.layout.ts` to change page layout
+- **Styling**: Customize in `quartz/styles/`
+
+## 🛠️ Useful Commands
+
+| Command | Description |
+|---------|-------------|
+| `npx quartz build --serve` | Start local development server |
+| `npx quartz build` | Build for production |
+| `npx quartz sync` | Sync changes to GitHub |
+| `npx quartz create` | Initialize content (first time) |
+| `npx quartz update` | Update to latest version |
+
+## 🌐 Hosting Options
+
+After building, you can deploy the `public/` folder to:
+- GitHub Pages
+- Netlify
+- Vercel
+- Cloudflare Pages
+- Any static hosting service
+
+For detailed hosting instructions, see the [[hosting]] page.
+
+## 💬 Community & Support
+
+- **Discord**: [Join our community](https://discord.gg/p8xN7T8ch6)
+- **Issues**: [Report bugs or request features](https://github.com/TJ2005/collaborate-quartz/issues)
+
+## 📚 Additional Resources
+
+- [[authoring content|Content Authoring Guide]]
+- [[configuration|Configuration Options]]
+- [[layout|Layout Customization]]
+- [[features/index|All Features]]
+
+---
+
+**MPSTME BTech Cybersecurity** | Building knowledge together

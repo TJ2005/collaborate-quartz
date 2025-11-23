@@ -2,12 +2,12 @@
 title: Configuration
 ---
 
-Quartz is meant to be extremely configurable, even if you don't know any coding. Most of the configuration you should need can be done by just editing `quartz.config.ts` or changing [[layout|the layout]] in `quartz.layout.ts`.
+collaborate-btechcys-27 is meant to be extremely configurable, even if you don't know any coding. Most of the configuration you should need can be done by just editing `quartz.config.ts` or changing [[layout|the layout]] in `quartz.layout.ts`.
 
 > [!tip]
-> If you edit Quartz configuration using a text-editor that has TypeScript language support like VSCode, it will warn you when you you've made an error in your configuration, helping you avoid configuration mistakes!
+> If you edit collaborate-btechcys-27 configuration using a text-editor that has TypeScript language support like VSCode, it will warn you when you you've made an error in your configuration, helping you avoid configuration mistakes!
 
-The configuration of Quartz can be broken down into two main parts:
+The configuration of collaborate-btechcys-27 can be broken down into two main parts:
 
 ```ts title="quartz.config.ts"
 const config: QuartzConfig = {
@@ -41,10 +41,10 @@ This part of the configuration concerns anything that can affect the whole site.
 - `baseUrl`: this is used for sitemaps and RSS feeds that require an absolute URL to know where the canonical 'home' of your site lives. This is normally the deployed URL of your site (e.g. `quartz.jzhao.xyz` for this site). Do not include the protocol (i.e. `https://`) or any leading or trailing slashes.
   - This should also include the subpath if you are [[hosting]] on GitHub pages without a custom domain. For example, if my repository is `jackyzha0/quartz`, GitHub pages would deploy to `https://jackyzha0.github.io/quartz` and the `baseUrl` would be `jackyzha0.github.io/quartz`.
   - Note that Quartz 4 will avoid using this as much as possible and use relative URLs whenever it can to make sure your site works no matter _where_ you end up actually deploying it.
-- `ignorePatterns`: a list of [glob](<https://en.wikipedia.org/wiki/Glob_(programming)>) patterns that Quartz should ignore and not search through when looking for files inside the `content` folder. See [[private pages]] for more details.
+- `ignorePatterns`: a list of [glob](<https://en.wikipedia.org/wiki/Glob_(programming)>) patterns that collaborate-btechcys-27 should ignore and not search through when looking for files inside the `content` folder. See [[private pages]] for more details.
 - `defaultDateType`: whether to use created, modified, or published as the default date to display on pages and page listings.
 - `theme`: configure how the site looks.
-  - `cdnCaching`: if `true` (default), use Google CDN to cache the fonts. This will generally be faster. Disable (`false`) this if you want Quartz to download the fonts to be self-contained.
+  - `cdnCaching`: if `true` (default), use Google CDN to cache the fonts. This will generally be faster. Disable (`false`) this if you want collaborate-btechcys-27 to download the fonts to be self-contained.
   - `typography`: what fonts to use. Any font available on [Google Fonts](https://fonts.google.com/) works here.
     - `title`: font for the title of the site (optional, same as `header` by default)
     - `header`: font to use for headers

@@ -1,18 +1,64 @@
-# Quartz v4
+# MPSTME BTech Cybersecurity - Collaborative Repository
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+This is the configuration repository for the MPSTME (Mukesh Patel School of Technology Management & Engineering) BTech Cybersecurity program's collaborative digital garden and notes website.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## 🚀 Deployment Commands
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+### Initial Setup
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+```bash
+# Clone the repository
+git clone https://github.com/TJ2005/collaborate-quartz.git
+cd collaborate-quartz
 
-## Sponsors
+# Install dependencies
+npm install
+```
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+### Local Development
+
+```bash
+# Start local development server with hot-reload
+npx quartz build --serve
+
+# The site will be available at http://localhost:8080/
+```
+
+### Build for Production
+
+```bash
+# Build the static site
+npx quartz build
+
+# Output will be in the 'public' folder
+```
+
+### Sync Content
+
+```bash
+# Add, commit, and push your changes to GitHub
+npx quartz sync
+```
+
+### Full Deployment Workflow
+
+```bash
+# 1. Make your content changes in the content/ folder
+# 2. Preview locally
+npx quartz build --serve
+
+# 3. Build for production
+npx quartz build
+
+# 4. Sync to GitHub (this will trigger automatic deployment if configured)
+npx quartz sync
+```
+
+## 📚 Requirements
+
+- **Node.js**: v22 or higher
+- **npm**: v10.9.2 or higher
+
+## 💬 Community
+
+[Join our Discord Community](https://discord.gg/p8xN7T8ch6)

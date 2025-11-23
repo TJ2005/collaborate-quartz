@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea or improvement for Quartz
+about: Suggest an idea or improvement for collaborate-btechcys-27
 title: ""
 labels: enhancement
 assignees: ""
